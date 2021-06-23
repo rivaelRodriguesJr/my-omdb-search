@@ -1,0 +1,14 @@
+<div class="p-5 bg-light rounded-3">
+  <div class="d-lg-flex d-md-inline-flex flex-md-column flex-lg-row">
+    <div>
+      <h2>{{movie?.Title}}</h2>
+      <p>{{movie?.Plot}}</p>
+      <span class="fw-bold">Actor(s):</span><span class="ms-2">{{movie?.Actors}}</span>
+      <br />
+      <span class="fw-bold">Review:</span><span class="ms-2">{{movie?.imdbRating}}</span>
+    </div>
+    <div class="ms-1">
+      <img class="img-thumbnail " [src]="movie?.Poster" alt="poster">
+    </div>
+  </div>
+</div>
