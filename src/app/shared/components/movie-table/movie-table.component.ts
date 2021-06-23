@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { StorageMovie } from 'src/app/models/storage-movie';
 
 @Component({
   selector: 'app-movie-table',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieTableComponent implements OnInit {
 
+  @Input() movies: StorageMovie[] = [];
+  @Output() rowClick = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onRowClick(imdbID: string) {
+    this.rowClick.emit(imdbID);
   }
 
 }

@@ -16,7 +16,8 @@ import { MovieTableComponent } from './components/movie-table/movie-table.compon
     CommonModule
   ],
   exports: [
-    MovieCardComponent
+    MovieCardComponent,
+    MovieTableComponent
   ]
 })
 export class SharedModule { }

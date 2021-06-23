@@ -23,7 +23,8 @@ export class MovieSearchComponent implements OnInit {
   }
 
   onSearchClick() {
-    console.log(Boolean('False'))
+    this.showMovie = false;
+    this.movie = {} as Movie;
     this.movieSearchService.findMovie({ t: this.movieTitle}).subscribe(response => {
       this.movie = response;
 
@@ -46,7 +47,6 @@ export class MovieSearchComponent implements OnInit {
     this.showMovie = false;
     this.showErrorAlert = false;
     this.movieTitle = '';
-    this.movie.imdbID
     this.movie = {} as Movie;
   }
 

@@ -9,11 +9,11 @@ import { NavRoute } from './models/nav-route';
 export class AppComponent {
   routes: NavRoute[] = [
     {
-      name: 'Buscar Filmes',
+      name: 'Search Movies',
       path: 'movie-search'
     },
     {
-      name: 'Filmes favoritos',
+      name: 'Favorite Movies',
       path: 'favorite-movies'
     }
   ];

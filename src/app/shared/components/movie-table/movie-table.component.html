@@ -1,1 +1,16 @@
-<p>movie-table works!</p>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">imdbID</th>
+      <th scope="col">Title</th>
+      <th scope="col">Review</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let movie of movies" class="clickable" (click)="onRowClick(movie?.imdbID || '')">
+      <th scope="row">{{movie.imdbID}}</th>
+      <td>{{movie.Title}}</td>
+      <td>{{movie.imdbRating}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -6,6 +6,8 @@
       <span class="fw-bold">Actor(s):</span><span class="ms-2">{{movie?.Actors}}</span>
       <br />
       <span class="fw-bold">Review:</span><span class="ms-2">{{movie?.imdbRating}}</span>
+      <br />
+      <button type="button" class="btn mt-2" [ngClass]="isFavorite ? 'btn-primary' : 'btn-secondary'" (click)="onFavoriteClick()">Favorite</button>
     </div>
     <div class="ms-1">
       <img class="img-thumbnail " [src]="movie?.Poster" alt="poster">

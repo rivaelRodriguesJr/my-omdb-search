@@ -1,0 +1,6 @@
+.clickable-text {
+  cursor: pointer;
+  &:hover {
+    font-weight: bold;
+  }
+}
