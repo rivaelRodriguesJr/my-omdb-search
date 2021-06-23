@@ -1,27 +1,15 @@
 # MyOmdbSearch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+MyOmdbSearch is a project that search for an specific title of a movie using the [OMDb API](http://www.omdbapi.com) which allow the user to use the browser Local Storage to save favorite movies.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5 and uses [Bootstrap](https://getbootstrap.com/)version v5.0.2 for styling.
+And it is hosted in the following link: [MyOmdbSearch](https://admiring-goldstine-94cd1a.netlify.app/)
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Examples of movies to be searched
+- Hulk
+- Rambo
+- Ghostbusters
+- Alice Through the Looking Glass
